@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio Website </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-h"></i>
+                    <div class="logo-text">HANUMAN</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="https://github.com/Subham145/currency-convertor">Projects</a></li>
+                        <li><a href="Resume.pdf">Resume</a></li>
+                        
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                <img src="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png" alt="img">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Web Developer</span></h5>
+                    <h1>Hanuman jogi</h1>
+                    <p>Hello! I’m Hanuman Jogi, originally from Jabalpur and currently residing in Indore for my studies. I’m a third-year B.Tech student specializing in Computer Science and Engineering at Sage University, Indore. With a strong passion for web development, I have honed my skills in creating dynamic and responsive websites. My journey in web development has been driven by a keen interest in crafting user-friendly and visually appealing web applications. I am always eager to learn new technologies and improve my coding skills to deliver high-quality web solutions
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="Portfolio\Resume.pdf" download="Hanuman_Jogi_CV.pdf" class="btn active">Download CV</a>
+                       <a href="mailto:hsjogi9827@gmail.com" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/hanuman-sahay-jogi-1284a1260/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Subham145"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/Hanuman1411"><i class="fa-brands fa-x"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <footer>
+        <p>&copy; 2024 Hanuman Jogi. All rights reserved.</p>
+      </footer>
+     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
